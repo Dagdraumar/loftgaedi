@@ -23,9 +23,9 @@ for (i in 1:lengd) {
   allt_content <- content(allt[[i]])
   allt_content_radad[[i]] <- do.call(rbind, allt_content) 
 }
+rammi <- do.call(rbind, allt_content_radad)
 
 #Breytum gögnunum úr listum í gagnaramma
-rammi <- do.call(rbind, allt_content_radad)
 gagnarammi <- as_data_frame(matrix(nrow = nrow(rammi), ncol = ncol(rammi)))
 breidd <- ncol(rammi)
 for (j in 1:breidd) {
