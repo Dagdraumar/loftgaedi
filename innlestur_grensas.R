@@ -1,6 +1,7 @@
 library(tidyverse)
 library(httr)
 library(lubridate)
+library(stringr)
 
 #API slóðir fyrir Grensásveg (Mælistöð 02)
 param_url_NO2  <- "http://loftapi.reykjavik.is/api/v1/stations/data/02/12/08-01-2016/0/0/11-06-2016/23/30"
